@@ -64,6 +64,7 @@ aside blockquote a{
     padding: 10px 25px;
     border-radius: 20px;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 aside blockquote a:hover{
@@ -108,5 +109,9 @@ aside blockquote a:hover{
 
     aside blockquote h2{
         font-size: 30px;
+    }
+
+    aside blockquote p{
+        font-size: 14px;
     }
 }
