@@ -59,6 +59,10 @@ aside blockquote h2{
     font-weight: bold;
 }
 
+aside blockquote p{
+    line-height: 30px;
+}
+
 aside blockquote a{
     background: rgb(231, 201, 34);
     padding: 10px 25px;
@@ -75,9 +79,8 @@ aside blockquote a:hover{
 }
 
 @media only screen and (max-width:1180px){
-    aside figure{
-        margin-bottom: 40px;
-    }
+
+    aside figure{margin-bottom: 40px;}
 
     aside blockquote{
         justify-content: center;
@@ -87,9 +90,7 @@ aside blockquote a:hover{
         width: 80%;
     }
 
-    aside blockquote h2{
-        line-height: 40px;
-    }
+    aside blockquote h2{line-height: 40px;}
 
     aside blockquote p{
         line-height: 30px;
@@ -104,20 +105,15 @@ aside blockquote a:hover{
 
 @media only screen and (max-width:560px){
 
-    aside blockquote{
-        width: 90%;
-    }
+    aside blockquote{width: 90%;}
 
-    aside blockquote h2{
-        font-size: 30px;
-    }
+    aside blockquote h2{font-size: 30px;}
 
-    aside blockquote p{
-        font-size: 14px;
-    }
+    aside blockquote p{font-size: 14px;}
 
     aside blockquote a{
         font-size: 15px;
         width: 80%;
+        padding: 0px;
     }
 }

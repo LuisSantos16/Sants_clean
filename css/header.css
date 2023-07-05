@@ -247,6 +247,8 @@ header nav{
 }
 
 @media only screen and (max-width:570px){
+    
+    .contents{grid-auto-rows: 70px;}
 
     .banner{height: 50%;}
 
@@ -269,5 +271,8 @@ header nav{
 
     .text-banner h2{font-size: 20px;}
 
-    .text-banner a{font-size: 12px;}
+    .text-banner a{
+        font-size: 12px;
+        padding: 5px;
+    }
 }
