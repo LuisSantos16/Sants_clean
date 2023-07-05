@@ -32,9 +32,7 @@ header nav{
     padding: 15px;
 }
 
-.info-social{
-    background-color: rgb(16, 46, 73); 
-}
+.info-social{background-color: rgb(16, 46, 73);}
 
 .info-social a{
     margin: 0px 20px;
@@ -49,7 +47,6 @@ header nav{
 
 .social-icons{
     background-color: rgb(16, 46, 73);
-    
     display: flex;
 }
 
@@ -58,6 +55,8 @@ header nav{
     text-decoration: none;
     color: white;
 }
+
+.fa-bars{display: none;}
 
 .menu{
     background-color: rgb(255, 255, 255);
@@ -97,6 +96,7 @@ header nav{
 
 .text-banner{
     line-height: 50px;
+    margin: 0px 20px;
 }
 
 .text-banner h3{
@@ -111,7 +111,93 @@ header nav{
 
 .text-banner a{
     text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
     color: rgb(0, 0, 0);
     background-color: yellow;
     display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.text-banner a:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1180px){
+
+    header{
+        min-height: 50px;
+        background: none;
+    }
+
+    .logo{
+        padding: 20px;
+        font-size: 20px;
+        background-color: white;
+        color: rgb(44, 155, 219);
+        margin: 0;
+    }
+
+    .social{display: none;}
+
+    .fa-bars{
+        display: block;
+        float: right;
+        font-size: 30px;
+        color: rgb(44, 155, 219);
+        margin: 30px; 
+    }
+
+    .menu{
+        float: none;
+        position: relative;
+        left: -120%;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu a{
+        padding: 20px;
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a:hover{background-color: rgb(255, 255, 255);}
+    
+    .lista-open{
+        left: 0%;
+        transition: 1s;
+    }
+
+    #listaid{
+        background: rgb(44, 155, 219);
+        position: absolute;
+        top: 90px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:570px){
+
+    .logo{font-size: 15px;}
+
+    .fa-bars{font-size: 15px;}
+
+    #listaid{top: 75px;}
+
+    .text-banner{line-height: 30px;}
+
+    .text-banner h3{font-size: 15px;}
+
+    .text-banner h2{font-size: 20px;}
+
+    .text-banner a{font-size: 12px;}
 }
