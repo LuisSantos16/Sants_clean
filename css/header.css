@@ -142,8 +142,14 @@ header nav{
     gap: 10px;
 }
 
-.cont .fa-house,.cont .fa-envelope, .cont .fa-phone{
+.cont .fa-envelope{
     color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cont .fa-house, .cont .fa-phone{
+    color: rgb(10, 39, 66);
     font-weight: bold;
     font-size: 20px;
 }
