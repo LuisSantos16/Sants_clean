@@ -168,9 +168,13 @@ header nav{
         color: white;
         width: 100%;
         text-align: center;
+        color: rgb(44, 155, 219);
     }
 
-    .menu a:hover{background-color: rgb(255, 255, 255);}
+    .menu a:hover{
+        background-color: rgb(44, 155, 219);
+        color: white;
+    }
     
     .lista-open{
         left: 0%;
@@ -178,20 +182,23 @@ header nav{
     }
 
     #listaid{
-        background: rgb(44, 155, 219);
+        background: rgb(255, 255, 255);
         position: absolute;
         top: 90px;
         width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.158);
     }
 }
 
 @media only screen and (max-width:570px){
 
+    .banner{height: 50%;}
+
     .logo{font-size: 15px;}
 
     .fa-bars{font-size: 20px;}
 
-    #listaid{top: 75px;}
+    #listaid{top: 80px;}
 
     .text-banner{line-height: 30px;}
 
