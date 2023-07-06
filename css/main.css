@@ -33,7 +33,7 @@
 
 .text-servicios p{
     line-height: 35px;
-    text-align: justify;
+    text-align: right;
     font-weight: bolder;
     color: white;
 }
@@ -91,6 +91,68 @@
 
 /* experiencia */
 
+.container-experience{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+}
+
+.text-experience{
+    width: 600px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.text-experience h4{
+    color: green;
+}
+
+.text-experience h2{
+    font-size: 40px;
+}
+
+.text-experience p{
+    line-height: 25px;
+    margin: 20px 0px;
+}
+
+.exper-numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 20px;
+}
+
+.numbers{
+    margin-top: 20px;
+}
+
+.numbers h3{
+    color: green;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.numbers p{
+    font-weight: bold;
+}
+
+.img-experience{
+    border-radius: 20px;
+    overflow: hidden;
+    width: 500px;
+    margin: 20px;
+}
+
+.img-experience img{
+    width: 100%;
+}
+
 @media only screen and (max-width:1309px){
 
     .text-servicios{
@@ -118,6 +180,13 @@
     }
 }   
 
+@media only screen and (max-width:1179px){
+    .text-experience{
+        width: 80%;
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width:1070px){
 
     .Servicios figure{width: 250px;}
@@ -143,6 +212,30 @@
 
     .Servicios figure h3{
         margin: 20px 0px;
+    }
+}
+
+@media only screen and (max-width:570px){
+    .text-experience{
+        margin: 0;
+    }
+    
+    .text-experience h2{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .text-experience p{
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .numbers{
+        line-height: 0px;
+    }
+    
+    .numbers h3{
+        font-size: 20px;
     }
 }
 
