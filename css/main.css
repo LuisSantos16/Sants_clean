@@ -1,4 +1,5 @@
 
+/* servicios */
 .conta-servicios{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../img/carousel-2.jpg);
     background-repeat: no-repeat;
@@ -88,6 +89,7 @@
 
 .img-servicio img{width: 100%;}
 
+/* experiencia */
 
 @media only screen and (max-width:1309px){
 
@@ -102,7 +104,7 @@
     }
 
     .text-servicios a{
-        width: 20%;
+        width: 30%;
         margin: 20px 0px;
     }
 
