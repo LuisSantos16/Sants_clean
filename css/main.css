@@ -1,0 +1,162 @@
+
+.conta-servicios{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../img/carousel-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.text-servicios{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px 20px;
+}
+
+.text-servicios h4{
+    color: skyblue;
+    text-align: right;
+}
+
+.text-servicios h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.text-servicios p{
+    line-height: 35px;
+    text-align: justify;
+    font-weight: bolder;
+    color: white;
+}
+
+.text-servicios a{
+    background: rgb(231, 201, 34);
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 150px;
+    align-self: center;
+}
+
+.text-servicios a:hover{
+    background-color: rgb(10, 39, 66);
+    color: white;
+    transition: 0.5s;
+}
+
+.Servicios{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.Servicios figure{
+    width: 250px;
+    background-color: white;
+    text-align: center;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.Servicios figure i{
+    color: rgb(23, 80, 23);
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.123);
+    border-radius: 50%;
+}
+
+.img-servicio img{width: 100%;}
+
+
+@media only screen and (max-width:1309px){
+
+    .text-servicios{
+        width: 60%;
+        align-items: center;
+    }
+
+    .text-servicios h2{
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    .text-servicios a{
+        width: 20%;
+        margin: 20px 0px;
+    }
+
+    .Servicios{width: 90%;}
+
+    .Servicios figure{
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 300px;
+    }
+}   
+
+@media only screen and (max-width:1070px){
+
+    .Servicios figure{width: 250px;}
+}
+
+@media only screen and (max-width:900px){
+
+    .servicios{justify-content: space-around;}
+
+    .text-servicios{width: 90%;}
+
+    .text-servicios p{text-align: center;}
+
+    .Servicios figure{width: 300px;}
+}
+
+@media only screen and (max-width:711px){
+    .conta-servicios{padding: 40px 0px;}
+
+    .text-servicios a{width: 90%;}
+
+    .Servicios figure{width: 90%;}
+
+    .Servicios figure h3{
+        margin: 20px 0px;
+    }
+}
+
+@media only screen and (max-width:430px){
+    .Servicios figure h3{margin: 0px;}
+
+    .text-servicios h2{font-size: 20px;}
+    
+    .text-servicios p{
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .servicios{
+       margin: 0px;
+       padding: 0px;
+       width: 100%;
+    }
+}
