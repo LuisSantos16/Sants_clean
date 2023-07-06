@@ -145,7 +145,12 @@
 }
 
 @media only screen and (max-width:430px){
-    .Servicios figure h3{margin: 0px;}
+    .Servicios figure i{font-size: 15px;}
+
+    .Servicios figure h3{
+        margin: 0px;
+        padding: 10px 0px;
+    }
 
     .text-servicios h2{font-size: 20px;}
     
