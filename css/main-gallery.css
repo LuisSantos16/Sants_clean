@@ -1,0 +1,72 @@
+
+.container_gallery{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/carousel-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 150px;
+}
+
+.container_gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_gallery{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.text_img-gallery{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateY(-100%);
+    text-align: center;
+    background-color: rgb(241, 198, 7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-out;
+}
+
+.img_gallery:hover .text_img-gallery{
+    transform: translatey(0%);
+    transition: 0.5s ease-out;
+}
+
+.text_img-gallery h4{font-size: 25px;}
+
+.icons-gallery{margin-top: 40px;}
+
+.icons-gallery a{
+    background: green;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:1180px){
+    .container_gallery{padding: 50px;}
+}
+
+@media only screen and (max-width:990px){
+    .container_gallery{grid-template-columns: repeat(2,1fr);}
+}
+
+@media only screen and (max-width:620px){
+    .container_gallery{
+        grid-template-columns: repeat(1,1fr);
+        transition: 0.5s;
+    }
+
+    .container_gallery{padding: 20px;}
+}
