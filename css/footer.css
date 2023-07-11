@@ -50,6 +50,10 @@ form,iframe{
     padding: 20px;
 }
 
+iframe{
+    border-radius: 30px;
+}
+
 input[type="text"],input[type="email"]{
     width: 100%;
     margin: 10px 0px;
@@ -133,6 +137,11 @@ footer nav a{
         width: 95%;
     }
 
+    .text-formulario{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .text-formulario h2{
         font-size: 20px;
     }
@@ -141,8 +150,12 @@ footer nav a{
         font-size: 15px;
     }
 
+    form{
+        padding: 0px 20px;
+    }
+
     footer nav{
-        padding: 0px 40px;
+        padding: 40px;
         text-align: center;
     }
 }
