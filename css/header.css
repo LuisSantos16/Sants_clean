@@ -56,7 +56,9 @@ header nav{
     color: white;
 }
 
-.lista-bar{display: none;}
+.fa-bars{
+    font-size: 0px;
+}
 
 .menu{
     background-color: rgb(255, 255, 255);
