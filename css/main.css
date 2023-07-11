@@ -191,7 +191,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
 }
 
 .img-persons figure{
@@ -202,9 +201,7 @@
     border-radius: 10px;
 }
 
-.img-persons figure img{
-    width: 100%;
-}
+.img-persons figure img{width: 100%;}
 
 .social-person{
     position: absolute;
@@ -222,6 +219,13 @@
 .img-persons figure:hover .social-person{
     transform: translateX(0%);
     transition: 0.5s ease-out;
+}
+
+.img-persons figure img{transition: 0.5s;}
+
+.img-persons figure img:hover{
+    transform: translateX(10%);
+    transition: 0.5s;
 }
 
 .social-person a{
@@ -271,12 +275,32 @@
         margin-right: 10px;
         width: 300px;
     }
+
+    .text-persons{
+        width: 80%;
+    }
+
+    .img-persons figure{
+        width: 400px;
+    }
 }   
 
 @media only screen and (max-width:1179px){
     .text-experience{
         width: 80%;
         text-align: center;
+    }
+
+    .text-persons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-persons h2, .text-persons p{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0px;
     }
 }
 
@@ -333,6 +357,7 @@
 }
 
 @media only screen and (max-width:430px){
+    
     .Servicios figure i{font-size: 15px;}
 
     .Servicios figure h3{
@@ -352,4 +377,16 @@
        padding: 0px;
        width: 100%;
     }
+
+    .text-persons h2{font-size: 20px;}
+    .text-persons p{
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .img-persons figure{width: 90%;}
+
+    .img-persons blockquote h2{font-size: 15px;}
+
+    .img-persons blockquote p{font-size: 14px;}
 }
